@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Display Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .item-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .item {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .info {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 120%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: #f1f1f1;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-container:hover .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div class="item-container">
+        <div class="item">Receiving and Inspection</div>
+        <div class="info">Used to record and manager the received modules. Application assists in the inspection of the incoming material to determine the acceptance according to the inspection criteria.<br>Sampling plan:- Method used in QC to determine whether to accept or reject a lot of material <br>Skip lot:- Inspection technique used in QC where only some of lots in a sequence are inspected rather inspecting each one.</div>
+    </div>
+	<br>
+    <div class="item-container">
+        <div class="item">CAPA and SCAR</div>
+        <div class="info">CAPA/SCAR  workflow manages the investigation and elimination of critical and systemic nonconformance using a defined process for problem description, containment, root cause analysis, resolution, and verification of effectiveness.</div>
+    </div>
+
+    
+</body>
+</html>
